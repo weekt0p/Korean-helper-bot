@@ -23,7 +23,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     member = await bot.get_chat_member(chat_id=CHANNEL_ID, user_id=user_id)
     if member.status in ['member', 'creator', 'administrator']:
         await update.message.reply_text(
-            "✅ Спасибо за подписку!
+            "✅ Спасибо за подписку!"
 
 Выберите категорию 👇",
             reply_markup=main_keyboard
